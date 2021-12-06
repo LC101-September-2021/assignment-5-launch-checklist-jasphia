@@ -4,18 +4,15 @@
 //this wont work ^^??
 
 window.addEventListener("load", function() {
-    // let faultyItems  = document.getElementById("faultyItems");
-    // faultyItems.style.visibility = "hidden";
-
    
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
    let listedPlanetsResponse = myFetch();
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
-       console.log(listedPlanets);          //??
+       console.log(listedPlanets);         
    }).then(function () {
-       console.log(listedPlanets);          //??
+       console.log(listedPlanets);         
        // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
        let planet = pickPlanet(listedPlanets);
        //said helper function
