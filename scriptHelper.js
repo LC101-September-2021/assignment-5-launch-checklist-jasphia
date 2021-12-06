@@ -27,16 +27,16 @@ function validateInput(testInput) {
 
 
 function formSubmission(document, pilot, copilot, fuelLevel, cargoLevel) {
-    //using validate input function for validation
+    //using validate input function for validation it 
     if (validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" 
     || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty") {
 
-        return alert("ERROR: All fields are required.");
+        return this.alert("ERROR: All fields are required.");
 
     } else if (validateInput(pilot) === 'Is a Number' || validateInput(copilot) === 'Is a Number' 
     || validateInput(fuelLevel) === 'Not a Number' || validateInput(cargoLevel) === 'Not a Number') {
 
-        return alert("ERROR: Make sure to enter valid information for each field.");
+        return this.alert("ERROR: Make sure to enter valid information for each field.");
 
     } else {
         
